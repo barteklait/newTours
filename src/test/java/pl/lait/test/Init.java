@@ -29,7 +29,7 @@ public class Init {
 		//driver = new ChromeDriver();
 		URL remoteAddress = null;
 		try {
-			remoteAddress = new URL("http://localhost:4444/wd/hub");
+			remoteAddress = new URL("http://192.168.10.74:4444/wd/hub");
 		} catch (MalformedURLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
