@@ -18,6 +18,7 @@ public class ReservationTest {
 
 	@Test
 	public void reserveFlight() {
+		//przejscie na ekran logowania
 		driver.findElement(By.linkText("SIGN-ON")).click();
 		driver.findElement(By.name("userName")).sendKeys("btk");
 		driver.findElement(By.name("password")).sendKeys("btk");
@@ -56,16 +57,16 @@ public class ReservationTest {
 		Select toDaySelect = new Select(toDay);
 		toDaySelect.selectByVisibleText("25");
 
-		String BusinessRadioXpath = "/html/body/div/table/tbody/tr"
+		String businessRadioXpath = "/html/body/div/table/tbody/tr"
 				+ "/td[2]/table/tbody/tr[4]/td/table/tbody/tr/td[2]/"
 				+ "table/tbody/tr[5]/td/form/table/tbody/tr[9]/td[2]/" + "font/font/input[1]";
 
-		driver.findElement(By.xpath(BusinessRadioXpath)).click();
-		
+		driver.findElement(By.xpath(businessRadioXpath)).click();
+
 		WebElement airline = driver.findElement(By.name("airline"));
 		Select airlineSelect = new Select(airline);
 		airlineSelect.selectByVisibleText("Unified Airlines");
-		
+
 		driver.findElement(By.name("findFlights")).click();
 
 	}

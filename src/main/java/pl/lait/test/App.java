@@ -18,7 +18,7 @@ public class App {
 		System.out.println("Hello zxfcWorld! odpalamy chroma");
 		//driver = new ChromeDriver();
 		
-		//driver.get("http://mail.google.com");
+		//driver.get("http://wp.pl");
 		
 		
 	}
