@@ -70,7 +70,12 @@ public class ReservationTest {
 		driver.findElement(By.name("findFlights")).click();
 
 	}
+	@After
+	public void tearDown() {
+		Init.end();
+	}
 }
 // @After
 // public void tearDown() {
+
 // driver.close();
